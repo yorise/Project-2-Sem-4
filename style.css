@@ -1,24 +1,50 @@
-nav.navbar {
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    margin-top: 3rem;
+}
+
+section {
+    min-height: 100vh;
+    padding-top: 5rem;
+}
+
+.navbar {
     position: fixed;
     left: 0;
     right: 0;
     top: 0;
 }
 
-.hero {
-    background: url('https://images.unsplash.com/photo-1741261498263-a5704667520d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyNnx8fGVufDB8fHx8fA%3D%3D') no-repeat center;
-    background-size: cover;
-    height: 100vh;
+.navbar-brand {
+    font-weight: bold;
+}
+
+.jumbotron {
+    background: linear-gradient(to right, #007bff, #00c6ff);
+}
+
+section.features {
+    background-color: #f4f8fc;
+}
+
+#features .row-md-4 {
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    color: white;
-    text-align: center;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
 }
 
-.hero h1 {
-    font-size: 3rem;
+#features .row-md-4 img {
+    width: 30rem;
 }
 
-.section {
-    padding: 60px 0;
+footer {
+    margin-top: 30px;
 }

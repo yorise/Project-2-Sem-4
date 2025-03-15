@@ -1,9 +1,15 @@
-$(document).ready(function(){
-    $('a.nav-link').on('click', function(event) {
+$(document).ready(function() {
+    $('form').on('submit', function(event) {
+        event.preventDefault();
+        alert('Terima kasih! Pesan Anda telah dikirim.');
+    });
+
+    $('.navbar-nav a').on('click', function(event) {
         if (this.hash !== "") {
             event.preventDefault();
+            let hash = this.hash;
             $('html, body').animate({
-                scrollTop: $(this.hash).offset().top
+                scrollTop: $(hash).offset().top
             }, 100);
         }
     });
