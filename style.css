@@ -48,6 +48,16 @@ section.features {
     width: 40rem;
 }
 
+section#preview {
+    background-color: #00c6ff;
+    width: 100%;
+}
+
+section#preview .col-md-4 {
+    border-style:inset;
+    margin: 0 1rem;
+}
+
 footer {
     margin-top: 30px;
 }
